@@ -70,7 +70,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 	            SecurityContextHolder.getContext().setAuthentication(authentication);
 
 	        } catch (UsernameNotFoundException ex) {
-	            // Token valid but user no longer exists → ignore
 	        }
 	    }
 
