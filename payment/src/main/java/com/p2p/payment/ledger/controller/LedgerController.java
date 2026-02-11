@@ -21,8 +21,6 @@ public class LedgerController {
 	
 	private final LedgerRepository ledgerRepository;
 	
-	
-	
 	@GetMapping
 	public List<LedgerEntry> getMyLedger(Authentication authentication) {
 		UUID userId = UUID.fromString(authentication.getName());
