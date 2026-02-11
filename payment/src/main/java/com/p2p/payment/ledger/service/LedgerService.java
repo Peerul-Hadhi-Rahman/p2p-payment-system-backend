@@ -15,8 +15,6 @@ public class LedgerService {
 	
 	private final LedgerRepository ledgerRepository;
 	
-	
-	
 	public void record(
 			UUID userId,
 			BigDecimal amount,
